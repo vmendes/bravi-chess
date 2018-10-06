@@ -15,7 +15,7 @@ services:
         container_name: bravi-chess-web
         build:
           context: .
-          dockerfile: Dockerfile.api
+          dockerfile: Dockerfile.web
         expose:
             - 4200
         ports:

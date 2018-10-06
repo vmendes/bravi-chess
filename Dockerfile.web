@@ -2,7 +2,7 @@ FROM node:8.12.0-alpine
 MAINTAINER Valdir Mendes <valdir.mendes@gmail.com>
 RUN mkdir /tmp/app
 WORKDIR /tmp/app
-ADD package.json /tmp/app/package.json
+ADD ./bravi-chess-web/package.json /tmp/app/package.json
 RUN npm install
 ADD ./bravi-chess-web /tmp/app
 ENTRYPOINT npm start-prod

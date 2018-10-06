@@ -46,3 +46,17 @@ ng serve
 ```bash
 http://localhost:4200/
 ```
+
+## Steps to run on Docker
+
+**1. Build API first**
+
+```bash
+cd bravi-chess-api
+mvn package
+```
+
+**2. Run docker compose**
+```bash
+docker-compose up --build
+```
