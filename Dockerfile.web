@@ -5,4 +5,4 @@ WORKDIR /tmp/app
 ADD ./bravi-chess-web/package.json /tmp/app/package.json
 RUN npm install
 ADD ./bravi-chess-web /tmp/app
-ENTRYPOINT npm run start-prod
+ENTRYPOINT npm start
