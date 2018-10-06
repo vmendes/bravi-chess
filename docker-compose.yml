@@ -23,7 +23,7 @@ services:
         networks:
             - bravi-chess-network
         links:
-            - bravi-chess-api: bravi-chess-api
+            - bravi-chess-api
         depends_on:
             - bravi-chess-api
 networks:
