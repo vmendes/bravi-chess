@@ -12,7 +12,7 @@ For that, here's the web application and an API.
 
 ## Steps to Setup - API
 
-** Build and run the app using Java/Maven **
+**1. Build and run the app using Java/Maven**
 
 ```bash
 cd bravi-chess-api
@@ -26,14 +26,14 @@ Alternatively, you can run the app directly using Maven
 mvn spring-boot:run
 ```
 
-You may check current endpoints with URL below
+**2. Check current endpoints with URL below**
 ```bash
 http://localhost:8888/swagger-ui.html
 ```
 
 ## Steps to Setup - Web
 
-** Build and run the app using Node **
+**1. Build and run the app using Node**
 
 ```bash
 cd bravi-chess-web
@@ -42,7 +42,7 @@ npm install
 ng serve
 ```
 
-Open your browser on:
+**2. Open your browser on**
 ```bash
 http://localhost:4200/
 ```
