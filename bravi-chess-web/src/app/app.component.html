@@ -1,0 +1,25 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<h2>Knight Moves: </h2>
+ 
+<div>
+Rows: <input [(ngModel)]="nRows" type="number"/> 
+Columns: <input [(ngModel)]="nCols" type="number"/>
+<button (click)="onChangeBoard()">Change Board</button>
+</div>
+
+<div class="contents">  
+  <div class="coord"></div>
+  <div class="coord" *ngFor="let c of columns">{{c}}</div>
+  <div class="row" *ngFor="let r of rows.slice().reverse()">
+    <div class="coord">{{r}}</div>
+    <div class="box" *ngFor="let c of columns" (click)="onClickBox(c + r)"
+		[ngClass]="{'movable': currentBoxes.includes(c + r)}">
+		<img *ngIf="currentKnight==(c + r)" src="assets/knight.png"/>
+	</div>
+	<div class="coord">{{r}}</div>
+  </div>
+  <div class="coord"></div>
+  <div class="coord" *ngFor="let c of columns">{{c}}</div>
+</div>
+
+

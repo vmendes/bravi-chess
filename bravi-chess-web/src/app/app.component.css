@@ -1,0 +1,49 @@
+
+html, body { 
+  width: 100%;
+  height: 100%; 
+  display: flex;
+}
+
+.content { 
+  border: 1px solid black;
+  
+}
+
+.row {
+  height: 50px;
+  display: flex;  flex-flow: row no-wrap;
+}
+.box {
+  width: 50px;
+  height: 50px;
+  background: black;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.box.movable {
+  background-color: grey !important;
+}
+
+.box img {
+  width: 50px;
+  height: 50px;
+}
+
+.coord {
+  width: 50px;
+  //height: 50px;
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;
+  border: 1px solid transparent;
+}
+
+.row:nth-of-type(even) .box:nth-of-type(even) {
+  background-color: white;
+}
+
+.row:nth-of-type(odd) .box:nth-of-type(odd) {  
+  background-color: white;
+}

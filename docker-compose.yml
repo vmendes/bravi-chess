@@ -1,0 +1,35 @@
+version: '3.5'
+services:
+    bravi-chess-api:
+        container_name: bravi-chess-api
+        build:
+            context: .
+            dockerfile: bravi-chess-api/Dockerfile
+        expose:
+            - 8888
+        ports:
+          - 8888:8888 
+        networks:
+            - bravi-chess-network
+        
+    bravi-chess-web:
+        container_name: bravi-chess-web
+        build:
+          context: .
+          dockerfile: bravi-chess-web/Dockerfile
+        expose:
+            - 4200
+        ports:
+          - 4200:4200
+        networks:
+            - bravi-chess-network
+        links:
+            - bravi-chess-api: bravi-chess-api
+        depends_on:
+            - bravi-chess-api
+networks:
+    bravi-chess-network:
+        driver: bridge
+volumes:
+    spring-cloud-config-repo:
+        external: true
