@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   config: {
-    apiUrl: 'http://localhost:8888/'
+    apiPort: '8888'
   }
 };
 
