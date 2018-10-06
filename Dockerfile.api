@@ -3,4 +3,4 @@ MAINTAINER Valdir Mendes <valdir.mendes@gmail.com>
 VOLUME /tmp
 EXPOSE 8888
 ADD ./bravi-chess-api/target/bravi-chess-api.jar bravi-chess-api.jar
-ENTRYPOINT java -Xms512M -Xmx2048M -jar bravi-chess-api.jar
+ENTRYPOINT java -Xmx2048M -jar bravi-chess-api.jar
