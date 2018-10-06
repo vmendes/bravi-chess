@@ -12,7 +12,7 @@ For that, here's the web application and an API.
 
 ## Steps to Setup - API
 
-** Build and run the app using Java/Maven**
+** Build and run the app using Java/Maven **
 
 ```bash
 cd bravi-chess-api
@@ -33,7 +33,7 @@ http://localhost:8888/swagger-ui.html
 
 ## Steps to Setup - Web
 
-** Build and run the app using Node**
+** Build and run the app using Node **
 
 ```bash
 cd bravi-chess-web
